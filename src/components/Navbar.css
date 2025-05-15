@@ -19,8 +19,8 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background: var(--seperation-line);
-    box-shadow: 0 0 20px var(--seperation-line), 0 0 20px var(--seperation-line), 0 0 20px var(--seperation-line), 0 0 20px var(--seperation-line), 0 0 30px var(--seperation-line);
+    background: rgb(125, 125, 255);
+    box-shadow: 0 0 5px var(--seperation-line), 0 0 10px var(--seperation-line), 0 0 20px var(--seperation-line);
 }
 
 .title {

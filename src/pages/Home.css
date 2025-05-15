@@ -8,14 +8,16 @@ h2 {
 }
 
 .social {
-    padding-top: 40px;
+    padding-top: 3em;
     display: flex;
-    place-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
 }
 
 .social-icon > img {
-    height: 50px;
+    height: clamp(30px, 10vw, 50px);
     border-radius: 50%;
     padding: 5px;
     transition: filter 0.25s ease-out;
@@ -23,7 +25,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.social-icon>img:hover {
+.social-icon > img:hover {
     filter: drop-shadow(0 0 10px white);
-    background-color: rgba(255, 255, 255, 0.8);
 }
