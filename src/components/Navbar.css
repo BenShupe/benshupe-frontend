@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #242424;
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 75px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar::after {
+    --seperation-line: rgb(100,100,255);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--seperation-line);
+    box-shadow: 0 0 20px var(--seperation-line), 0 0 20px var(--seperation-line), 0 0 20px var(--seperation-line), 0 0 20px var(--seperation-line), 0 0 30px var(--seperation-line);
+}
+
+.title {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    font-size: 2em;
+    margin: 0;
+}
