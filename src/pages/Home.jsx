@@ -11,16 +11,18 @@ export default function Home() {
         <h2>
             <TypeWriter preText="I'm " type_list={["a Student", "a Web Developer"]} pause={2000} />
         </h2>
-        <div className="social">
-            <a target="_blank" href="https://github.com/BenShupe" className="social-icon">
-                <img src={githubLogo} />
-            </a>
-            <a target="_blank" href="mailto:benshupe@sasktel.net" className="social-icon">
-                <img src={emailLogo} />
-            </a>
-            <a target="_blank" href="https://ca.linkedin.com/in/benjamin-shupe-21700b354" className="social-icon">
-                <img src={linkedinLogo} />
-            </a>
+        <div className="social-wrapper">
+            <div className="social">
+                <a target="_blank" href="https://github.com/BenShupe" className="social-icon">
+                    <img src={githubLogo} />
+                </a>
+                <a target="_blank" href="mailto:benshupe@sasktel.net" className="social-icon">
+                    <img src={emailLogo} />
+                </a>
+                <a target="_blank" href="https://ca.linkedin.com/in/benjamin-shupe-21700b354" className="social-icon">
+                    <img src={linkedinLogo} />
+                </a>
+            </div>
         </div>
     </>
     );
