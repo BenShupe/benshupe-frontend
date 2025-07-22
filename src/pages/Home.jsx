@@ -1,8 +1,10 @@
 import "./Home.css"
 import TypeWriter from "../components/TypeWriter"
+import ProjectSection from "../components/ProjectSection"
 import githubLogo from "../assets/github.svg"
 import emailLogo from "../assets/email.svg"
 import linkedinLogo from "../assets/linkedin.svg"
+
 
 export default function Home() {
     return (
@@ -11,6 +13,7 @@ export default function Home() {
         <h2>
             <TypeWriter preText="I'm " type_list={["a Student", "a Web Developer"]} pause={2000} />
         </h2>
+        <ProjectSection />
         <div className="social-wrapper">
             <div className="social">
                 <a target="_blank" href="https://github.com/BenShupe" className="social-icon">
@@ -24,6 +27,7 @@ export default function Home() {
                 </a>
             </div>
         </div>
+        
     </>
     );
 }

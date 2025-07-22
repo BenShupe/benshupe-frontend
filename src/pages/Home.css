@@ -26,16 +26,14 @@ h2 {
     background-color: #fff;
 }
 
-.social {
-    transition: opacity 5s ease-out;
-}
 
 .social:hover .social-icon {
+    transition: opacity 0.25s ease-in-out;
     opacity: 0.5;
 }
 
 .social .social-icon:hover{
-    transition: filter 0.25s ease-out;
+    transition: filter 0.35s ease-out;
     filter: drop-shadow(0 0 10px white);
     opacity: 1;
 }
