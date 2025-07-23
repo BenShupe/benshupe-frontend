@@ -1,9 +1,8 @@
 import "./ProjectCard.css";
 
-export default function ProjectCard({ title, description, image_path, github, tags }) {
+export default function ProjectCard({ title, description, image_path, github, tags, reverse }) {
   return (
-    <div className="project-card">
-      <img src={image_path} alt={title} className="project-image" />
+    <div className={`project-card ${reverse ? "reverse" : ""}`}>
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>
@@ -16,6 +15,7 @@ export default function ProjectCard({ title, description, image_path, github, ta
           View on GitHub
         </a>
       </div>
+      <img src={image_path} alt={title} className="project-image" />
     </div>
   );
 }

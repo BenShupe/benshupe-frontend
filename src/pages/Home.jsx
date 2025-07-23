@@ -11,7 +11,7 @@ export default function Home() {
     <>
         <h1>Hi, I'm Ben</h1>
         <h2>
-            <TypeWriter preText="I'm " type_list={["a Student", "a Web Developer"]} pause={2000} />
+            <TypeWriter preText="I'm " type_list={["a University Student", "a Web Developer"]} pause={2000} />
         </h2>
         <ProjectSection />
         <div className="social-wrapper">

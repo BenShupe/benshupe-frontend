@@ -8,7 +8,7 @@ export default function ProjectSection() {
         <section id="projects">
             <h2>Featured Projects</h2>
             {projects.map((project, i) => (
-                <ProjectCard key={i} {...project} />
+                <ProjectCard key={i} {...project} reverse={i%2==0} />
             ))}
         </section>
     );
