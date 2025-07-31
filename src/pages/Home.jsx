@@ -1,9 +1,7 @@
 import "./Home.css"
 import TypeWriter from "../components/TypeWriter"
 import ProjectSection from "../components/ProjectSection"
-import githubLogo from "../assets/github.svg"
-import emailLogo from "../assets/email.svg"
-import linkedinLogo from "../assets/linkedin.svg"
+import ContactSection from "../components/ContactSection"
 
 
 export default function Home() {
@@ -14,20 +12,7 @@ export default function Home() {
             <TypeWriter preText="I'm " type_list={["a University Student", "a Web Developer"]} pause={2000} />
         </h2>
         <ProjectSection />
-        <div className="social-wrapper">
-            <div className="social">
-                <a target="_blank" href="https://github.com/BenShupe" className="social-icon">
-                    <img src={githubLogo} />
-                </a>
-                <a target="_blank" href="mailto:benshupe@sasktel.net" className="social-icon">
-                    <img src={emailLogo} />
-                </a>
-                <a target="_blank" href="https://ca.linkedin.com/in/benjamin-shupe-21700b354" className="social-icon">
-                    <img src={linkedinLogo} />
-                </a>
-            </div>
-        </div>
-        
+        <ContactSection />
     </>
     );
 }
