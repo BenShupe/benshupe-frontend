@@ -7,7 +7,7 @@
     #1a1a1f,
     #0e0e10
   );
-  background-size: 400% 400%;
+  background-size: 100% 100%;
   animation: gradientShift 20s ease infinite;
   padding: 4rem 2rem;
   text-align: center;
