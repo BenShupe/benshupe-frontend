@@ -15,7 +15,7 @@ export const projects = [
         github: "https://github.com/BenShupe/ai-flappy-bird",
         live: "#",
         slug: "flappy-bird-ai",
-        tags: ["Neural Network", "Genetic Algorithm", "AI", "Game AI", "JavaScript"],
+        tags: ["Neural Network", "Genetic Algorithm", "AI", "JavaScript"],
     },
 
 ];
