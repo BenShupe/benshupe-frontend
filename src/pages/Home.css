@@ -6,34 +6,3 @@ h1 {
 h2 {
     margin-top: 5px;
 }
-
-.social-wrapper {
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.social {
-    gap: 2em;
-    display: flex;
-}
-
-.social-icon img {
-    height: clamp(30px, 10vw, 20px);
-    border-radius: 50%;
-    padding: 5px;
-    background-color: #fff;
-}
-
-
-.social:hover .social-icon {
-    transition: opacity 0.25s ease-in-out;
-    opacity: 0.5;
-}
-
-.social .social-icon:hover{
-    transition: filter 0.35s ease-out;
-    filter: drop-shadow(0 0 10px white);
-    opacity: 1;
-}
