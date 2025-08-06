@@ -1,11 +1,11 @@
 .contact-section {
   background: linear-gradient(
     90deg,
-    #141414,
-    #1a1a1f,
-    #23232b,
-    #1a1a1f,
-    #141414
+    rgba(20, 20, 20, 0.1),
+    rgba(26, 26, 31, 0.4),
+    rgba(35, 35, 43, 1),
+    rgba(26, 26, 31, 0.4),
+    rgba(20, 20, 20, 0.1)
   );
   background-size: 200% 200%;
   animation: gradientShift 20s cubic-bezier(0.23, 1, 0.320, 1) infinite;
