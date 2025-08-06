@@ -10,7 +10,7 @@ export const projects = [
     },
     {
         title: "Flappy Bird AI",
-        description: "A self-learning AI that plays Flappy Bird. Built from scratch with a simple neural network and trained over generations to improve.",
+        description: "A self-learning AI that plays Flappy Bird. Built from scratch with a simple neural network and trained to improve.",
         image_path: "/Flappy-Bird-AI.png",
         github: "https://github.com/BenShupe/ai-flappy-bird",
         live: "#",
