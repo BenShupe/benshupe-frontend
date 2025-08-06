@@ -2,20 +2,24 @@ import "./ProjectCard.css";
 
 export default function ProjectCard({ title, description, image_path, github, tags, reverse }) {
   return (
-    <div className={`project-card ${reverse ? "reverse" : ""}`}>
-      <div className="project-content">
-        <h3 className="project-title">{title}</h3>
-        <p className="project-description">{description}</p>
-        <div className="project-tags">
-          {tags.map((tag, i) => (
-            <span key={i} className="tag">{tag}</span>
-          ))}
+    <div className="project-card">
+      <h3 className="project-title">{title}</h3>
+
+      <div className={`project-body ${reverse ? "reverse" : ""}`}>
+        <img src={image_path} alt={title} className="project-image" />
+        
+        <div className="project-content">
+          <p className="project-description">{description}</p>
+          <div className="project-tags">
+            {tags.map((tag, i) => (
+              <span key={i} className="tag">{tag}</span>
+            ))}
+          </div>
+          <a href={github} className="project-link" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
         </div>
-        <a href={github} className="project-link" target="_blank" rel="noopener noreferrer">
-          View on GitHub
-        </a>
       </div>
-      <img src={image_path} alt={title} className="project-image" />
     </div>
   );
 }
