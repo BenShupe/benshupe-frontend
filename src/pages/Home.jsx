@@ -21,7 +21,7 @@ export default function Home() {
 
     // Map scrollY to some movement values, tweak multipliers to your taste
     let blob1Style = {
-        transform: `translate(${scrollY * 0.2}px, ${scrollY * 0.2}px) scale(1)`,
+        transform: `translate(${scrollY * 0.5}px, ${scrollY * 0.2}px) scale(1)`,
     };
     let blob2Style = {
         transform: `translate(${-scrollY * 0.25}px, ${scrollY * 0.3}px) scale(1)`,
