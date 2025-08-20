@@ -22,7 +22,7 @@ export default function ContactSection() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     to: "benshupe@sasktel.net",
-                    email: `Email from: ${form.email} on benshupe.com`,
+                    subject: `Email from: ${form.email} on benshupe.com`,
                     message: form.message,
                 }),
             });
