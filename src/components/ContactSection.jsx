@@ -21,7 +21,8 @@ export default function ContactSection() {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    email: form.email,
+                    to: "benshupe@sasktel.net",
+                    email: `Email from: ${form.email} on benshupe.com`,
                     message: form.message,
                 }),
             });
