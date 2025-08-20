@@ -13,22 +13,21 @@ export default function Home() {
     useEffect(() => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
-            console.log(window.scrollY);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Map scrollY to some movement values, tweak multipliers to your taste
     let blob1Style = {
-        transform: `translate(${scrollY * 0.5}px, ${scrollY * 0.2}px) scale(1)`,
+    transform: `translate(${scrollY * 0.8}px, ${scrollY * 0.4}px) scale(1.05)`,
     };
     let blob2Style = {
-        transform: `translate(${-scrollY * 0.25}px, ${scrollY * 0.3}px) scale(1)`,
+        transform: `translate(${-scrollY * 0.5}px, ${scrollY * 0.6}px) scale(1.05)`,
     };
     let blob3Style = {
-        transform: `translate(${scrollY * 0.1}px, ${scrollY * 0.1}px) scale(1)`,
+        transform: `translate(${scrollY * 0.3}px, ${scrollY * 0.3}px) scale(1.05)`,
     };
+
 
     return (
     <>
@@ -38,9 +37,9 @@ export default function Home() {
             <div className="blob blob3" style={blob3Style}></div>
         </div>
         <h1>Hi, I'm Ben</h1>
-        <h3>
+        <h2>
             <TypeWriter preText="I'm " type_list={["a University Student", "a Web Developer"]} pause={2000} />
-        </h3>
+        </h2>
         <ProjectSection />
         <ContactSection />
     </>
