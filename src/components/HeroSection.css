@@ -1,0 +1,44 @@
+.hero-section {
+  padding: 4rem 2rem 4rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background: transparent; /* sits on top of your blobs */
+  z-index: 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(138, 92, 245, 0.8);
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px rgba(138, 92, 245, 0.3);
+  font-weight: 550;
+}
+
+/* ================= Scroll Cue ================= */
+.scroll-cue {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 550;
+  text-shadow: 0 0 5px rgba(138, 92, 245, 0.3);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
