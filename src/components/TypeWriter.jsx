@@ -42,9 +42,9 @@ export default function TypeWriter({ type_list: typeList, speed = 100, pause = 1
         <div className="Typewriter_wrapper">
             {preText}
             <span className="Typewriter">
-                {displayedText} 
+              {displayedText} 
+              <span className="Typewriter_cursor">{"\|"}</span>
             </span>
-            <span className="Typewriter_cursor">{"\|"}</span>
         </div>
     </>
     );
