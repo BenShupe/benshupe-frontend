@@ -4,6 +4,7 @@
     margin-left: 2px;
     font-weight: 800;
     text-shadow: 0 0 40px rgba(255, 255, 255, 1);
+    max-width: 80vw;
 }
 
 @keyframes blink {
@@ -26,7 +27,12 @@
 }
 
 .Typewriter_wrapper {
-    font-size: inherit;
     user-select: none;
     font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .Typewriter_wrapper{
+        font-size: 1.3rem;
+    }
 }
