@@ -23,9 +23,9 @@ Check it out here: **[benshupe.com](https://benshupe.com)**
 
 ## Setup
 
-1. Clone the repo:
+Clone the repo:
 
-git clone https://github.com/BenShupe/benshupe-frontend.git
+    git clone https://github.com/BenShupe/benshupe-frontend.git
 
 Install dependencies:
 
