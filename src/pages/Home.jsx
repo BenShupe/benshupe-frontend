@@ -1,5 +1,4 @@
 import "./Home.css";
-import TypeWriter from "../components/TypeWriter"
 import ProjectSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
 import HeroSection from "../components/HeroSection";
