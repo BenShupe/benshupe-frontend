@@ -1,11 +1,13 @@
 import "./ContactSection.css";
 import GlowButton from "./GlowButton";
 import { useState } from "react";
+import Turnstile, { useTurnstile } from "react-turnstile";
 
 export default function ContactSection() {
     const [form, setForm] = useState({ email: "", message: "" });
     const [sending, setSending] = useState(false);
     const [status, setStatus] = useState(null);
+    const [token, setToken] = useState("");
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -21,9 +23,10 @@ export default function ContactSection() {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    to: "benshupe@sasktel.net",
-                    subject: `Email from: ${form.email} on benshupe.com`,
-                    message: form.message,
+                    "to": "benshupe@sasktel.net",
+                    "subject": `Email from: ${form.email} on benshupe.com`,
+                    "message": form.message,
+                    "token": token
                 }),
             });
 
@@ -41,16 +44,23 @@ export default function ContactSection() {
     return (
         <section className="contact-section" id="contact">
             <h2 className="contact-title">Contact Me</h2>
-            <p className="contact-description">Messages sent here go through AWS Lambda and SES then straight to my email. </p>
+            <p className="contact-description">Messages sent here go straight to my email inbox using AWS! </p>
 
             <form className="contact-form" onSubmit={handleSubmit}>
-                <input type="email" name="email" placeholder="Your email" value={form.email} onChange={handleChange} required />
-                <textarea name="message" placeholder="Your message" value={form.message} onChange={handleChange} rows={5} required/>
+                <input type="email" name="email" placeholder="Your email so I can get back to you!" value={form.email} onChange={handleChange} required />
+                <textarea name="message" placeholder="Your message to send." value={form.message} onChange={handleChange} rows={5} required/>
 
-                <GlowButton type="submit" disabled={sending} className="contact-button" color="rgba(138, 92, 245, 1)">
+                <GlowButton type="submit" disabled={sending || token==""} className="contact-button" color="rgba(138, 92, 245, 1)">
                     {sending ? "Sending..." : "Send Email"}
                 </GlowButton>
                 {status && <p className="status-text">{status}</p>}
+                <Turnstile
+                    sitekey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
+                    onVerify={(tok) => setToken(tok)}
+                    theme="dark"
+                    size="normal"
+                    // appearance="interaction-only"
+                />
             </form>
 
 
