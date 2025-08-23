@@ -27,33 +27,32 @@ Check it out here: **[benshupe.com](https://benshupe.com)**
 
 git clone https://github.com/BenShupe/benshupe-frontend.git
 
-    Install dependencies:
+Install dependencies:
 
-npm install
+    npm install
 
-    Set environment variables for Lambda:
+Set environment variables for Lambda:
 
-TURNSTILE_SECRET=your-turnstile-secret
-API_SECRET=your-lambda-secret
+    TURNSTILE_SECRET=your-turnstile-secret
+    API_SECRET=your-lambda-secret
 
-    Start the development server:
+Start the development server:
 
-npm start
+    npm start
 
-    Deploy your frontend and Lambda to AWS (S3 + CloudFront recommended).
+Deploy your frontend and Lambda to AWS (S3 + CloudFront recommended).
 
 AI Assistance
 
 During development, I used AI (ChatGPT) to help me:
 
-    Debug tricky scroll and acrylic effects
+- Debug tricky scroll and acrylic effects
 
-    Brainstorm component structure and layout
+- Brainstorm component structure and layout
 
-    Refine CSS styling for better visuals
+- Refine CSS styling for better visuals
 
 All code was written, tested, and reviewed by me — AI was used as a helper tool, not a replacement.
 License
 
 This project is open source under the MIT License
-.
