@@ -17,5 +17,14 @@ export const projects = [
         slug: "flappy-bird-ai",
         tags: ["Neural Network", "AI", "JavaScript"],
     },
+    {
+        title: "Door Sensor System",
+        description: "A door monitoring system using an ESP32, door sensors, and a Discord bot. Updates 100+ people on status of club room.",
+        image_path: "/door-sensor.png",
+        github: "https://github.com/uofrobotics/door-sensor-system",
+        live: "#",
+        slug: "iot-door-sensor",
+        tags: ["IoT", "ESP32", "Raspberry Pi", "C++", "Python"],
+    },
 
 ];
