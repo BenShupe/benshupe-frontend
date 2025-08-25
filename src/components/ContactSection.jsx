@@ -59,7 +59,6 @@ export default function ContactSection() {
                     onVerify={(tok) => setToken(tok)}
                     theme="dark"
                     size="normal"
-                    // appearance="interaction-only"
                 />
             </form>
 
