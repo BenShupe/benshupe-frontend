@@ -7,7 +7,7 @@ import HeroSection from "../components/HeroSection";
 export default function Home() {
 
     return (
-    <>
+    <div className="home">
         <div className="background-blobs">
             <div className="blob blob1"></div>
             <div className="blob blob2"></div>
@@ -16,6 +16,6 @@ export default function Home() {
         <HeroSection />
         <ProjectSection />
         <ContactSection />
-    </>
+    </div>
     );
 }
